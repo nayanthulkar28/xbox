@@ -127,6 +127,7 @@ a {
 	width: 30px;
 	border-radius: 50%;
 	align-self: center;
+	cursor: pointer;
 }
 
 .login-dropdown {
@@ -224,3 +225,45 @@ a {
 	z-index: 1;
 }
 /* ~carousel-container */
+
+/* option bar */
+
+.option-bar {
+	display: flex;
+	padding: 3rem 12rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.op-img {
+	cursor: pointer;
+}
+
+.op-img img {
+	width: 6rem;
+}
+
+.op-img p {
+	display: block;
+	text-align: center;
+	font-family: var(--potta);
+	font-weight: bolder;
+	color: var(--xbox_green);
+}
+
+.op-img p:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: inherit;
+	background-color: var(--xbox_green);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	margin-top: 0.2rem;
+}
+
+.op-img:hover p:after {
+	opacity: 1;
+}
+
+/* ~option bar */

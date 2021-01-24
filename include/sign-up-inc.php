@@ -38,10 +38,9 @@ if(isset($_POST['sign-up-submit'])) {
 			mysqli_stmt_store_result($stmt);
 			$resultCheck = mysqli_stmt_num_rows($stmt);
 			if($resultCheck > 0) {
-				echo $resultCheck;
-				// header("Location: ../sign-up.php?error=usertaken&fname=".$firstName."&lname=".$laseName.
-				// "&country=".$country."&dob=".$dob);
-				// exit();
+				header("Location: ../sign-up.php?error=usertaken&fname=".$firstName."&lname=".$laseName.
+				"&country=".$country."&dob=".$dob);
+				exit();
 			}
 			else {
 				$sql = "insert into users(firstName,lastName,email,password,country,dob,type) 
@@ -54,7 +53,7 @@ if(isset($_POST['sign-up-submit'])) {
 				else {
 					mysqli_stmt_bind_param($stmt,"ssssss",$firstName,$lastName,$email,$pwd,$country,$dob);
 					mysqli_stmt_execute($stmt);
-					header("Location: ../sign-up.php?error=success");
+					header("Location: ../login.php");
 					exit();
 				}
 			}
