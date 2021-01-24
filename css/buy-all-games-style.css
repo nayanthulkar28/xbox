@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap');
+
+:root {
+	--xbox_green: #107C10;
+	--slate_grey: #3A3A3A;
+	--light_grey: #e8eae6;
+	--roboto: "Roboto", sans-serif;
+	--potta: "Potta", sans-serif;
+}
+
+/* games */
+
+h1, p, a {
+	font-family: var(--roboto);
+	font-weight: bold;
+}
+
+.games {
+	padding: 2rem 4rem;
+}
+
+/* ~games */
