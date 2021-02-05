@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap');
+
+:root {
+	--xbox_green: #107C10;
+	--slate_grey: #3A3A3A;
+	--light_grey: #e8eae6;
+	--roboto: "Roboto", sans-serif;
+	--potta: "Potta", sans-serif;
+}
+
+/* games */
+
+h1, p, a {
+	font-family: var(--roboto);
+	font-weight: bold;
+}
+
+.error-msg {
+	position: fixed;
+	font-weight: bold;
+	left: 50%;
+	transform: translate(-50%,0);
+	padding: 0.2rem;
+	border: 1px solid black;
+	border-radius: 3px;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.games {
+	padding: 0rem 4rem;
+}
+
+.games h1 {
+	padding: 2rem 0rem;
+	text-align: center;
+}
+
+.games-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.single-game {
+	flex-basis: 15rem;
+	margin: 1rem 0;
+	box-shadow: 0 0 10px black;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.single-game a {
+	display: block;
+}
+
+.single-game a img{
+	width: 100%;
+}
+
+.game-name p {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.game-name button {
+	display: block;
+	margin: 0.5em auto;
+	margin-bottom: 1rem;
+	width: 100%;
+	border: none;
+	height: 2rem;
+	font-weight: bolder;
+}
+
+.game-name button:hover {
+	background-color: var(--xbox_green);
+	color: white;
+	cursor: pointer;
+}
+
+/* ~games */

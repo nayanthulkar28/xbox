@@ -1,9 +1,9 @@
 <div class="mynav">
 	<div class="nav-left">
 		<div class="empty"></div>
-		<a href="" title="" class="ms-logo"><img src="./images/ms-logo.png" alt=""></a>
+		<a href="./main-page.php" title="" class="ms-logo"><img src="./images/ms-logo.png" alt=""></a>
 		<div class="separate"></div>
-		<a href="" title="" class="xbox-logo"><img src="./images/xbox-logo.png" alt=""></a>
+		<a href="./main-page.php" title="" class="xbox-logo"><img src="./images/xbox-logo.png" alt=""></a>
 	</div>
 	<div class="nav-mid">
 		<ul>
@@ -34,6 +34,7 @@
 									<div class="logdd-down-p">
 											<p>'.$_SESSION['firstName'].' '.$_SESSION['lastName'].'</p>
 											<p>'.$_SESSION['email'].'</p>
+											<a href="my-cart.php" class="my-cart">My Cart</a>
 									</div>
 							</div>
 					</div>

@@ -165,7 +165,7 @@ a {
 
 .logdd-down-img {
 	width: 80px;
-	margin-right: 1.5rem;
+	margin-right: 1.5rem;	
 }
 
 .logdd-down-img img {
@@ -183,9 +183,17 @@ a {
 	padding-top: 0.5rem;
 }
 
-.logdd-down-p p:last-child {
+.logdd-down-p p:nth-child(2) {
 	font-family: var(--roboto);
 	font-size: 0.8rem;
+}
+
+.my-cart {
+	font-size: 0.9rem;
+	margin: 0;
+	padding: 0.5rem 0;
+	color: blue!important;
+	text-decoration: underline!important;
 }
 
 /* ~nav-right */

@@ -58,10 +58,16 @@
 			<img src="./images/op-bar-4.svg" alt="">
 			<p>Accessories</p>
 		</div>
-		<div class="op-img">
-			<img src="./images/op-bar-5.svg" alt="">
-			<p>Sell games</p>
-		</div>
+		<?php
+			if($_SESSION['type'] === "admin") {
+				echo '<a href="./sell-games.php">
+						<div class="op-img">
+							<img src="./images/op-bar-5.svg" alt="">
+							<p>Sell games</p>
+						</div>
+					</a>';	
+			}
+		?>
 		<div class="op-img">
 			<img src="./images/op-bar-6.svg" alt="">
 			<p>My account</p>

@@ -8,15 +8,22 @@
 	--potta: "Potta", sans-serif;
 }
 
-/* games */
-
-h1, p, a {
-	font-family: var(--roboto);
-	font-weight: bold;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.games {
-	padding: 2rem 4rem;
+.container {
+	display: flex;
+	justify-content: center;	
 }
 
-/* ~games */
+.container form {
+	width: 40%;
+}
+
+.inside {
+	display: flex;
+	justify-content: space-between;
+}
